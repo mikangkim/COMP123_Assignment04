@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_Assignment4
 {
-    class GiantPlanet : Planet, IHasMoons, IHasRings
+    class GiantPlanet
     {
         /// <summary>
         /// holdding a string that describes
