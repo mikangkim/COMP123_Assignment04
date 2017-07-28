@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_Assignment4
 {
-    class GiantPlanet
+    class GiantPlanet : Planet, IHasMoons, IHabitable
     {
         /// <summary>
         /// holdding a string that describes
@@ -36,7 +36,7 @@ namespace COMP123_Assignment4
         /// <summary>
         /// return true if the MoonCount property is greater than zero
         /// </summary>
-        public bool IHasMoons()
+        public bool HasMoons()
         {
             if (MoonCount > 0)
             {
@@ -50,7 +50,7 @@ namespace COMP123_Assignment4
         /// <summary>
         /// return true if the RingCount property is greater than zero
         /// </summary>
-        public bool IHasRings()
+        public bool HasRings()
         {
             if (RingCount > 0)
             {

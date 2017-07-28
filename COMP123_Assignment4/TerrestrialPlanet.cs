@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_Assignment4
 {
-    class TerrestrialPlanet
+    class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
         private bool _oxygen;
 
@@ -25,7 +25,7 @@ namespace COMP123_Assignment4
         /// <summary>
         /// will return true if the oxygen instance variable is set to true
         /// <summary>
-        public bool IHabitable()
+        public bool Habitable()
         {
             if (_oxygen == true)
             {
@@ -39,7 +39,7 @@ namespace COMP123_Assignment4
         /// <summary>
         /// return true if the MoonCount property is greater than zero
         /// </summary>
-        public bool IHasMoons()
+        public bool HasMoons()
         {
             if (MoonCount > 0)
             {
